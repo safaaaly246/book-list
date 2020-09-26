@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book List</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+<style>
+ .delete{
+   cursor: pointer;
+   color:hotpink;
+   font-size: 20px;
+ }
+  .success ,.error{
+    color:#fff;
+    margin: 5px 0 15px 0;
+    padding: 5px;
+  }
+  .success{
+    background-color: rgba(0, 128, 0, 0.592);
+  }
+  .error{
+    background-color: rgb(226, 24, 24)
+  }
+  button:hover{
+    color: #fff;
+
+  }
+  button{
+    background-color: blue ;
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+  
+<div class="container">
+  <h1>Add Book</h1>
+  <form  id="book-form">
+    <div>
+      <label for="title">Title</label>
+      <input type="text" id="title" class="u-full-width">
+    </div>
+    <div>
+      <label for="author">Author</label>
+      <input type="text" id="author" class="u-full-width">
+    </div>
+    <div>
+      <label for="isbn">ISBN#</label>
+      <input type="text" id="isbn" class="u-full-width">
+    </div>
+    <div>
+     <!-- <button class="u-full-width ">Submit</button> -->
+     <input type="submit" class="u-full-width " value="submit" id="submit">
+    </div>
+  </form>
+  <hr>
+  <table class="u-full-width">
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>ISBN</th>
+      <th>Delete</th>
+
+
+    </tr>
+    <tbody id="book-list">
+
+    </tbody>
+  </table>
+</div>
+  <!-- <script src="appes6.js"></script> -->
+  <script src="appes6.js"></script>
+
+</body>
+</html>
